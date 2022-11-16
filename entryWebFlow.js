@@ -1,4 +1,4 @@
-document.getElementById("codePostale").setAttribute("value", "yaR");
+document.getElementById("codePostale").setAttribute("value", "yaTout");
 
 var max_chars = 5;
     
