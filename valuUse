@@ -1,0 +1,3 @@
+<script type="text/javascript">
+ var prenom = document.getElementById("Entrez-votre-Nom").value; 
+</script>
