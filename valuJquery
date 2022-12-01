@@ -1,0 +1,6 @@
+<label>Your input: </label>
+<p><span id='display'></span></p>
+<script type="text/javascript">
+document.getElementById("Email").addEventListener('input',function(){
+document.getElementById('display').innerHTML = document.querySelector('#Email').value;});
+</script>
