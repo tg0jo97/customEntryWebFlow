@@ -1,6 +1,27 @@
-<label>Your input: </label>
+<label>Merci pour votre confiance!</label>
 <p><span id='display'></span></p>
+<p><span id='display2'></span></p>
+<p><span id='display3'></span></p>
+<p><span id='display4'></span></p>
+<p><span id='display5'></span></p>
+<p><span id='display6'></span></p>
 <script type="text/javascript">
+//affiche Nom
+document.getElementById("Entrez-votre-Nom").addEventListener('input',function(){
+document.getElementById('display').innerHTML = document.querySelector('#Entrez-votre-Nom').value;});
+//affiche Prenom
+document.getElementById("Entrez-votre-Pr-nom").addEventListener('input',function(){
+document.getElementById('display2').innerHTML = document.querySelector('#Entrez-votre-Pr-nom').value;});
+//affiche Email
 document.getElementById("Email").addEventListener('input',function(){
-document.getElementById('display').innerHTML = document.querySelector('#Email').value;});
+document.getElementById('display3').innerHTML = document.querySelector('#Email').value;});
+//affiche Phone
+document.getElementById("t-l-phone-2").addEventListener('input',function(){
+document.getElementById('display4').innerHTML = document.querySelector('#t-l-phone-2').value;});
+//affiche code Postal
+document.getElementById("codePostale").addEventListener('input',function(){
+document.getElementById('display5').innerHTML = document.querySelector('#codePostale').value;});
+//affiche radioButton
+document.querySelector('input[name="Mode-chauffage-principale-maison"]').addEventListener('click',function(){
+document.getElementById('display6').innerHTML = document.querySelector('input[name="Mode-chauffage-principale-maison"]:checked').value;});
 </script>
