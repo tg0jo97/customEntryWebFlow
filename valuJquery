@@ -21,7 +21,13 @@ document.getElementById('display4').innerHTML = document.querySelector('#t-l-pho
 //affiche code Postal
 document.getElementById("codePostale").addEventListener('input',function(){
 document.getElementById('display5').innerHTML = document.querySelector('#codePostale').value;});
-//affiche radioButton
-document.querySelector('input[name="Mode-chauffage-principale-maison"]').addEventListener('click',function(){
-document.getElementById('display6').innerHTML = document.querySelector('input[name="Mode-chauffage-principale-maison"]:checked').value;});
+//affiche radioButton Mode chauffage principale maison
+document.getElementById("Fioul").addEventListener('click',function(){
+document.getElementById('display5').innerHTML = document.querySelector('input[name="Mode-chauffage-principale-maison"]:checked')?.value;});
+document.getElementById("Gaz-2").addEventListener('click',function(){
+document.getElementById('display5').innerHTML = document.querySelector('input[name="Mode-chauffage-principale-maison"]:checked')?.value;});
+document.getElementById("electrique").addEventListener('click',function(){
+document.getElementById('display5').innerHTML = document.querySelector('input[name="Mode-chauffage-principale-maison"]:checked')?.value;});
+document.getElementById("Autres").addEventListener('click',function(){
+document.getElementById('display5').innerHTML = document.querySelector('input[name="Mode-chauffage-principale-maison"]:checked')?.value;});
 </script>
