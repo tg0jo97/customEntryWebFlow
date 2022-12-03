@@ -6,19 +6,19 @@
 <p><span id='display5'></span></p>
 <p><span id='display6'></span></p>
 <p><span id='display7'></span> <span id='display8'></span> <span id='display9'></span> <span id='display10'></span> <span id='display11'></span> <span id='display12'></span> <span id='display13'></span></p>
-<script type="text/javascript">
+<script  async type="text/javascript">
 //affiche Nom
-document.getElementById("Entrez-votre-Nom").addEventListener('input',function(){
-document.getElementById('display').innerHTML = document.querySelector('#Entrez-votre-Nom').value;});
+document.getElementById("Nom").addEventListener('input',function(){
+document.getElementById('display').innerHTML = document.querySelector('#Nom').value;});
 //affiche Prenom
-document.getElementById("Entrez-votre-Pr-nom").addEventListener('input',function(){
-document.getElementById('display2').innerHTML = document.querySelector('#Entrez-votre-Pr-nom').value;});
+document.getElementById("Prenom-2").addEventListener('input',function(){
+document.getElementById('display2').innerHTML = document.querySelector('#Prenom-2').value;});
 //affiche Email
 document.getElementById("Email").addEventListener('input',function(){
 document.getElementById('display3').innerHTML = document.querySelector('#Email').value;});
 //affiche Phone
-document.getElementById("t-l-phone-2").addEventListener('input',function(){
-document.getElementById('display4').innerHTML = document.querySelector('#t-l-phone-2').value;});
+document.getElementById("Telephone").addEventListener('input',function(){
+document.getElementById('display4').innerHTML = document.querySelector('#Telephone').value;});
 //affiche code Postal
 document.getElementById("codePostale").addEventListener('input',function(){
 document.getElementById('display5').innerHTML = document.querySelector('#codePostale').value;});
@@ -46,4 +46,3 @@ document.getElementById("Reno-global").addEventListener('click',function(){
 document.getElementById('display12').innerHTML = document.getElementById("Reno-global").name;});
 document.getElementById("Autre").addEventListener('click',function(){
 document.getElementById('display13').innerHTML = document.getElementById("Autre").name;});
-</script>
