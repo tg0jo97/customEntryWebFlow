@@ -78,11 +78,11 @@ function validateCodePostale(str) {
 }
 function validateNom(str) {
   // check length, if is a number, if is whole number, if no periods
-  return /^(?=.{1,50}$)[a-z]+(?:['_.\s][a-z]+)*$/.test(str);
+  return /^[a-z ,.'-]+$/.test(str);
 }
 function validatePrenom(str) {
   // check length, if is a number, if is whole number, if no periods
-  return /^(?=.{1,50}$)[a-z]+(?:['_.\s][a-z]+)*$/.test(str);
+  return /^[a-z ,.'-]+$/.test(str);
 }
 function validateEmail(str) {
   // check length, if is a number, if is whole number, if no periods
@@ -92,7 +92,7 @@ function validateEmail(str) {
 }
 function validatePhone(str) {
   // check length, if is a number, if is whole number, if no periods
-  return /^(?:(?:(?:\+|00)33[ ]?(?:\(0\)[ ]?)?)|0){1}[1-9]{1}([ .-]?)(?:\d{2}\1?){3}\d{2}$/.test(
+  return /^(0|\+33)[1-9]([-.: ]?[0-9]{2}){4}$/.test(
     str
   );
 }
