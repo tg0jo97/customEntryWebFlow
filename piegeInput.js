@@ -78,21 +78,21 @@ function validateCodePostale(str) {
 }
 function validateNom(str) {
   // check length, if is a number, if is whole number, if no periods
-  return /^[a-z ,.'-]+$/.test(str);
+  return /^[A-Z][A-Za-z\é\è\ê\-]+$/.test(str);
 }
 function validatePrenom(str) {
   // check length, if is a number, if is whole number, if no periods
-  return /^[a-z ,.'-]+$/.test(str);
+  return /^[A-Z][A-Za-z\é\è\ê\-]+$/.test(str);
 }
 function validateEmail(str) {
   // check length, if is a number, if is whole number, if no periods
-  return /^([a-zA-z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/.test(
+  return /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$/.test(
     str
   );
 }
 function validatePhone(str) {
   // check length, if is a number, if is whole number, if no periods
-  return /^(0|\+33)[1-9]([-.: ]?[0-9]{2}){4}$/.test(
+  return /^((\+)33|0)[1-9](\d{2}){4}$/.test(
     str
   );
 }
