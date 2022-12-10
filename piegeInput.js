@@ -18,13 +18,13 @@ document
 var oldValueNom = "";
 // listen for "input" event, since that handles all keypresses as well as cut/paste
 document.getElementById("Nom").addEventListener("input", function (event) {
-  var input = event.target;
-  if (validateNom(input.value)) {
+  var inputn = event.target;
+  if (validateNom(inputn.value)) {
     // update old value with new value
-    oldValueNom = input.value;
+    oldValueNom = inputn.value;
   } else {
     // set value to last known valid value
-    input.value = oldValueNom;
+    inputn.value = oldValueNom;
   }
 });
 
@@ -32,13 +32,13 @@ document.getElementById("Nom").addEventListener("input", function (event) {
 var oldValuePrenom = "";
 // listen for "input" event, since that handles all keypresses as well as cut/paste
 document.getElementById("Prenom-2").addEventListener("input", function (event) {
-  var input = event.target;
-  if (validatePrenom(input.value)) {
+  var inputp = event.target;
+  if (validatePrenom(inputp.value)) {
     // update old value with new value
-    oldValuePrenom = input.value;
+    oldValuePrenom = inputp.value;
   } else {
     // set value to last known valid value
-    input.value = oldValuePrenom;
+    inputp.value = oldValuePrenom;
   }
 });
 
@@ -46,13 +46,13 @@ document.getElementById("Prenom-2").addEventListener("input", function (event) {
 var oldValueEmail = "";
 // listen for "input" event, since that handles all keypresses as well as cut/paste
 document.getElementById("Email").addEventListener("input", function (event) {
-  var input = event.target;
-  if (validateEmail(input.value)) {
+  var inpute = event.target;
+  if (validateEmail(inpute.value)) {
     // update old value with new value
-    oldValueEmail = input.value;
+    oldValueEmail = inpute.value;
   } else {
     // set value to last known valid value
-    input.value = oldValueEmail;
+    inpute.value = oldValueEmail;
   }
 });
 
@@ -62,13 +62,13 @@ var oldValuePhone = "";
 document
   .getElementById("Telephone")
   .addEventListener("input", function (event) {
-    var input = event.target;
-    if (validatePhone(input.value)) {
+    var inputc = event.target;
+    if (validatePhone(inputc.value)) {
       // update old value with new value
-      oldValuePhone = input.value;
+      oldValuePhone = inputc.value;
     } else {
       // set value to last known valid value
-      input.value = oldValuePhone;
+      inputc.value = oldValuePhone;
     }
   });
 
