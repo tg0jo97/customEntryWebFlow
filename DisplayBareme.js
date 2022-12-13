@@ -90,4 +90,22 @@ document.getElementById("Entre75000et112801").addEventListener('click',function(
 document.getElementById('display14').innerHTML = document.querySelector('input[name="10personnes"]:checked')?.value;});
 document.getElementById("Superieur112801").addEventListener('click',function(){
 document.getElementById('display14').innerHTML = document.querySelector('input[name="10personnes"]:checked')?.value;});
+//affiche 11 Personne dans le foyer 
+document.getElementById("Inferieur63050").addEventListener('click',function(){
+document.getElementById('display14').innerHTML = document.querySelector('input[name="11personnes"]:checked')?.value;});
+document.getElementById("Entre63050et80797").addEventListener('click',function(){
+document.getElementById('display14').innerHTML = document.querySelector('input[name="11personnes"]:checked')?.value;});
+document.getElementById("Entre80797et121545").addEventListener('click',function(){
+document.getElementById('display14').innerHTML = document.querySelector('input[name="11personnes"]:checked')?.value;});
+document.getElementById("Superieur121545").addEventListener('click',function(){
+document.getElementById('display14').innerHTML = document.querySelector('input[name="11personnes"]:checked')?.value;});
+//affiche 12 Personne dans le foyer 
+document.getElementById("Inferieur67576").addEventListener('click',function(){
+document.getElementById('display14').innerHTML = document.querySelector('input[name="12personnes"]:checked')?.value;});
+document.getElementById("Entre67576et86594").addEventListener('click',function(){
+document.getElementById('display14').innerHTML = document.querySelector('input[name="12personnes"]:checked')?.value;});
+document.getElementById("Entre86594et130289").addEventListener('click',function(){
+document.getElementById('display14').innerHTML = document.querySelector('input[name="12personnes"]:checked')?.value;});
+document.getElementById("Superieur130289").addEventListener('click',function(){
+document.getElementById('display14').innerHTML = document.querySelector('input[name="12personnes"]:checked')?.value;});
 </script>
