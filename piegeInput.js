@@ -74,25 +74,25 @@ document
 
 function validateCodePostale(str) {
   // check length, if is a number, if is whole number, if no periods
-  return /^[0-9]{0,5}$/.test(str);
+  return /^\d{5}$/.test(str);
 }
 function validateNom(str) {
   // check length, if is a number, if is whole number, if no periods
-  return /^[a-zA-Z ]+$/.test(str);
+  return /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/.test(str);
 }
 function validatePrenom(str) {
   // check length, if is a number, if is whole number, if no periods
-  return /^[a-zA-Z ]+$/.test(str);
+  return /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð-]+$/.test(str);
 }
 function validateEmail(str) {
   // check length, if is a number, if is whole number, if no periods
-  return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(
+  return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(
     str
   );
 }
 function validatePhone(str) {
   // check length, if is a number, if is whole number, if no periods
-  return /^[0-9]{0,5}$/.test(
+  return /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/.test(
     str
   );
 }
